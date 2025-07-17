@@ -53,7 +53,7 @@ const SocialProofSection = () => {
           <div className="flex overflow-hidden">
             <motion.div
               animate={{
-                x: [0, -50 * clientLogos.length + '%'],
+                x: [`0%`, `-${50 * clientLogos.length}%`],
               }}
               transition={{
                 x: {
