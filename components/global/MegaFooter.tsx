@@ -45,7 +45,7 @@ const MegaFooter = () => {
   ]
 
   const socialLinks = [
-    { name: "LinkedIn", href: "#", icon: Linkedin },
+    { name: "LinkedIn", href: "https://au.linkedin.com/company/inova-ai-solutions", icon: Linkedin },
     { name: "Twitter", href: "#", icon: Twitter },
     { name: "YouTube", href: "#", icon: Youtube }
   ]

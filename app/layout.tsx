@@ -35,3 +35,22 @@ export default function RootLayout({
     </html>
   )
 }
+
+/*Shammo added the code below so that Navbars and Footers were global but it resulted in double navbar and footer everywhere so he's waiting for Youssef/Abrar for the next step. 
+Either remove the navbar and footer in every page and only have it in the layout.tsx or manually add it in every page and layput.tsx won't have it*/
+
+// export default function RootLayout({
+//   children,
+// }: {
+//   children: React.ReactNode;
+// }) {
+//   return (
+//     <html lang="en" className={`${inter.variable} ${jakartaSans.variable}`}>
+//       <body className="bg-backgroundDark text-textPrimary font-inter">
+//         <Navigation />
+//         {children}
+//         <MegaFooter />
+//       </body>
+//     </html>
+//   );
+// }

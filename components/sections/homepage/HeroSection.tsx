@@ -137,7 +137,10 @@ const HeroSection = () => {
         </motion.div>
 
         {/* CTA Button */}
+        
+        {/* <div style={{ position: "relative", display: "flex", flexDirection: "column", gap: "20px" }}> */}
         <motion.div
+          style={{paddingBottom: "80px"}}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
@@ -148,13 +151,14 @@ const HeroSection = () => {
             </Link>
           </Button>
         </motion.div>
-
         {/* Floating indicators */}
         <motion.div
+          // style={{ marginTop: "20px" }} /*Shammo addition (didn't work)/*
+          // style={{paddingBottom: "16px"}}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2" /*tried adjusting the bottom but didn't work*/
         >
           <motion.div
             animate={{ y: [0, 10, 0] }}
@@ -164,7 +168,8 @@ const HeroSection = () => {
             Scroll to explore
           </motion.div>
         </motion.div>
-      </div>
+        </div>
+      {/* </div> */}
     </section>
   )
 }
