@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 84% 4.9%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-backgroundDark text-textPrimary;
+  }
+  
+  .font-jakarta {
+    font-family: var(--font-jakarta);
+  }
+  
+  .font-inter {
+    font-family: var(--font-inter);
+  }
+}
+
+@layer components {
+  .btn-gradient {
+    @apply bg-accentGradient text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-accentPurple/30 hover:scale-105;
+  }
+  
+  .btn-purple-border {
+    @apply border-2 border-accentPurple text-accentPurple font-semibold py-2 px-6 rounded-full transition-all duration-300 hover:bg-accentPurple hover:text-white;
+  }
+  
+  .surface-card {
+    @apply bg-surfaceCard rounded-2xl border border-borderSubtle;
+  }
+  
+  .hero-text {
+    @apply font-jakarta font-bold text-h1 text-textPrimary;
+  }
+  
+  .hero-subtext {
+    @apply font-inter text-xl leading-8 text-textSecondary;
+  }
+  
+  .section-heading {
+    @apply font-jakarta font-bold text-h2 text-textPrimary;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-lg hover:shadow-accentPurple/20;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1C1C26;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #38bdf8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+.gradient-text {
+  background: linear-gradient(to left, #2dd4bf, #38bdf8, #818cf8); /* update colors as desired */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  
+.adjust-line-height {
+  line-height: 1em;
+}
+}
+
+.scroll-text {
+  bottom: -2rem !important;
+}
