@@ -121,20 +121,26 @@ const HeroSection = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <h1 className="hero-text mb-6">
-            Architecting Your{' '}
-            <span className="text-transparent bg-clip-text bg-accentGradient">
-              Enterprise AI Future
-            </span>
-            .
-          </h1>
-        </motion.div>
+      <div className="relative z-10 max-w-4xl mx-auto px-6 sm:px-6 lg:px-8 text-center overflow-visible">
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6, delay: 0.2 }}
+  >
+    <h1
+      className="
+        mb-6 font-bold leading-snug tracking-normal
+        text-balance break-words
+        text-[clamp(1.75rem,6vw,3.75rem)]
+      "
+    >
+      Architecting Your{' '}
+      <span className="text-transparent bg-clip-text bg-accentGradient">
+        Enterprise AI Future
+      </span>
+      .
+    </h1>
+  </motion.div>
 
         {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
